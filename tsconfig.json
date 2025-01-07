@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                         // Specify ECMAScript target version
+    "module": "CommonJS",                    // Use CommonJS modules
+    "outDir": "./dist",                      // Output directory for compiled files
+    "rootDir": "./design-patterns",                      // Root directory of source files
+    "strict": true,                          // Enable all strict type-checking options
+    "esModuleInterop": true,                 // Enable ES module interop
+    "skipLibCheck": true,                    // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true, // Ensure consistent casing in file names
+    "lib": ["ES2017", "DOM"]
+  },
+  "include": ["design-patterns/**/*"],                   // Include all files in the 'src' folder
+  "exclude": ["node_modules"]                // Exclude 'node_modules'
+}
