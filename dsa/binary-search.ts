@@ -66,4 +66,26 @@ function fairPairs(arr: number[], lower: number, upper: number){
     return totalPairs
 }
 
-console.log(fairPairs(arr, 3, 6))
+// console.log(fairPairs(arr, 3, 6))
+
+function bSearch(arr: number[], elem: number){
+    let l = 0, r = arr.length - 1
+    let elemIndex = -1
+
+    while(l <= r){
+        let mid = Math.floor((l + r) / 2)
+        if(arr[mid] === elem){
+            elemIndex = mid
+            return elemIndex
+        }
+        else if(arr[mid] > elem){
+            r = mid - 1
+        }
+        else{
+            l = mid + 1
+        }
+    }
+    return elemIndex
+}
+
+console.log(bSearch([1, 2,3,4,5,6], 4));
